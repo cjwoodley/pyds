@@ -4,11 +4,9 @@
 VAGRANTFILE_API_VERSION = '2'
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.define 'confluent' do |confluent|
-#  confluent.vm.box = 'chef/centos-6.5'
-#  confluent.vm.box = 'bento/centos-7.2'
-    onfluent.vm.box = 'bento/ubuntu-17.04'
-    confluent.vm.provision 'shell', path: 'provo/ubuntu.sh'
+  config.vm.define 'pyds' do |pyds|
+    pyds.vm.box = 'bento/ubuntu-17.04'
+    pyds.vm.provision 'shell', path: 'provo/ubuntu.sh'
   end
 
 
