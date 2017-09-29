@@ -13,7 +13,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Optional: forward ports from VM to native machine so you can run the streaming job locally; uncomment
   # the next three lines if you want this
 
-  # config.vm.network 'forwarded_port', guest: 2181, host: 2181
+   config.vm.network 'forwarded_port', guest: 8888, host: 8888
   # config.vm.network 'forwarded_port', guest: 9092, host: 9092
   # config.vm.network 'forwarded_port', guest: 8081, host: 8081
 
